@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark: #232830;
+            --white: #FFFFFF;
+            --black: #000000;
+            --hospital-green: #ACD9B2;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .drop-down{
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+            width: 200px;
+            border-radius: 5px;
+            display: none;
+            margin: 10px 0;
+            text-align: end;
+        }
+
+        button{
+            border: none;
+            position: relative;
+            padding: 10px 30px;
+            width: 200px;
+            cursor: pointer;
+            background-color: var(--hospital-green);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* button::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid;
+            border-bottom: 2px solid;
+            transform: rotate(-45deg);
+            right: 50px;
+            top: 11px;
+            transition: 0.5s;
+        } */
+
+        ul{
+            padding: 0;
+            margin: 0;
+            border-radius: 4px;
+        }
+
+        .drop-down>ul li{
+            list-style: none;
+            padding: 10px 20px;
+            transition: 0.1s linear;
+            cursor: pointer;
+        }
+
+        .drop-down>ul a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .drop-down>ul li:hover{
+           opacity: 0.7;
+           border-bottom: 4px solid var(--hospital-green);
+        }
+
+        .container.active .drop-down{
+            display: block;
+        }
+
+        /* .container.active button::before{
+            top: 17px;
+            transform: rotate(-225deg);
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button>prf</button>
+        <div class="drop-down">
+            <ul>
+                <a href="./clase9.html" target="_blink"><li>uk</li></a>
+                <a href="./clase6.html" target="_blink"><li>lv</li></a>
+                <a href="./clase7.html" target="_blink"><li>rt</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let toggleButton = document.querySelector('.container');
+        toggleButton.onclick = function() {
+            toggleButton.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>

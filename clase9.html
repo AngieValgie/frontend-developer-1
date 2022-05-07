@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark: #232830;
+            --white: #FFFFFF;
+            --black: #000000;
+            --hospital-green: #ACD9B2;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .my-projects{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 40px;
+        }
+
+        .project-cart{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+            background-color: var(--hospital-green);
+            border-radius: 20px;
+            padding-top: 4px;
+        }
+
+        .project-cart figure{
+            margin: 0;
+        }
+
+        .project-cart figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .project-cart p:nth-child(2){
+            color: var(--text-input-field);
+        }
+
+        .project-cart p:nth-child(3){
+            font-size: var(--sm);
+            font-weight: bold;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-projects">
+        <div class="my-project-container">
+            <h1 class="title">My projects</h1>
+            <div class="project-cart">
+                <figure><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="" class="product"></figure>
+                <p>Title</p>
+                <p>Company</p>
+            </div>
+
+            <div class="project-cart">
+                <figure><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="" class="product"></figure>
+                <p>Title</p>
+                <p>Company</p>
+            </div>
+
+            <div class="project-cart">
+                <figure><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="" class="product"></figure>
+                <p>Title</p>
+                <p>Company</p>
+            </div>
+
+            <div class="project-cart">
+                <figure><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                    alt="" class="product"></figure>
+                <p>Title</p>
+                <p>Company</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
