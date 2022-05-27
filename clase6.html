@@ -24,10 +24,12 @@
 
         body {
             font-family: 'Quicksand', sans-serif;
+            background: rgb(0, 0, 0);
+           
         }
-         
-        .raya{
-            background-color: var(--very-light-pink);
+
+        .raya {
+            background-color: #694747;
             width: 100%;
             height: 40px;
             margin: 0;
@@ -41,41 +43,67 @@
             margin-top: 20px;
         }
 
-        .product-card {
-            width: 240px;
+        .card-container:nth-child(1) {
+            z-index: 1;
         }
 
-        .product-card img {
+        .card-container:nth-child(3) {
+            z-index: 2;
+        }
+
+        .project-card {
+            width: 240px;
+            padding-bottom: 5px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #694747;
+        }
+
+        .project-card:nth-child(1):hover {
+            z-index: 4;
+            height: 320px;
+            width: 250px;
+            transition: 0.3s ease;
+            left: -5px;
+            border: 3px solid var(--hospital-green);
+        }
+
+        .project-card img {
             width: 240px;
             height: 240px;
             border-radius: 20px;
             object-fit: cover;
         }
 
-        .product-info {
+        .project-info {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
         }
 
-        .product-info figure {
-            margin: 0;
+        .project-info figure {
+            margin: 0 0 0 10px;
         }
 
-        .product-info figure img {
+        .project-info figure img {
             width: 35px;
             height: 35px;
         }
 
-        .product-info div p:nth-child(1){
+        .project-info div p:nth-child(1) {
             font-weight: bold;
             font-size: var(--md);
             margin-top: 0;
             margin-bottom: 4px;
+            color: azure;
         }
 
-        .product-info div p:nth-child(2){
+        .project-info div p:nth-child(2) {
             font-weight: bold;
             font-size: var(--sm);
             margin-top: 0;
@@ -89,11 +117,11 @@
                 grid-template-columns: repeat(auto-fill, 140px);
             }
 
-            .product-card {
+            .project-card {
                 width: 140px;
             }
 
-            .product-card img {
+            .project-card img {
                 width: 140px;
                 height: 140px;
             }
@@ -106,142 +134,142 @@
     <section class="main-container">
         <div class="card-container">
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
 
-            <div class="product-card">
+            <div class="project-card">
                 <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-                    alt="" class="product">
-                <div class="product-info">
+                    alt="" class="project">
+                <div class="project-info">
                     <div>
-                        <p>offer</p>
-                        <p>Bike</p>
+                        <p>Project</p>
+                        <p>Craetor name</p>
                     </div>
                     <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                        <img src="https://img.icons8.com/color-glass/96/000000/multiple-stars.png"/>
                     </figure>
                 </div>
             </div>
